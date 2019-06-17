@@ -70,7 +70,7 @@ class App extends Product
             $stmt = $this->connectDataBase->prepare($sql);
             // Thực thi câu SQL
             $stmt->execute();
-            // Xuất kết quả tổng số record đã update
+            // Xuất kết quả tổng số record đã delete
             echo $stmt->rowCount() . " delete thành công";
         } catch (PDOException $e) {
             echo 'Lỗi' . "<br>" . $e->getMessage();
